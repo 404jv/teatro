@@ -34,7 +34,7 @@ export class CreateTableAdmins1643644490744 implements MigrationInterface {
           {
             name: 'created_at',
             type: 'timestamp',
-            default: 'now()'
+            default: "datetime('now')"
           },
         ]
       })
