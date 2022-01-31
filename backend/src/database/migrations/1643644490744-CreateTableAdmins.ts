@@ -8,11 +8,15 @@ export class CreateTableAdmins1643644490744 implements MigrationInterface {
         columns: [
           {
             name: 'id',
-            type:  'uuid',
+            type: 'uuid',
             isPrimary: true,
           },
           {
             name: 'name',
+            type: 'varchar',
+          },
+          {
+            name: 'password',
             type: 'varchar',
           },
           {
@@ -21,7 +25,7 @@ export class CreateTableAdmins1643644490744 implements MigrationInterface {
           },
           {
             name: 'email',
-            type:'varchar',
+            type: 'varchar',
           },
           {
             name: 'address',
@@ -31,13 +35,13 @@ export class CreateTableAdmins1643644490744 implements MigrationInterface {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()'
-        },
+          },
         ]
       })
     );
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    queryRunner.dropTable('admins');
+    await queryRunner.dropTable('admins');
   }
 }
