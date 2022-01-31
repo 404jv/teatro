@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "seed:admin": "ts-node-dev ./src/database/seeds/adminSys.ts"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.2",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
@@ -15,6 +17,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.13",
     "@types/uuid": "^8.3.4",
     "ts-node-dev": "^1.1.8",
