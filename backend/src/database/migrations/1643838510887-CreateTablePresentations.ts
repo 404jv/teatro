@@ -11,6 +11,10 @@ export class CreateTablePresentations1643838510887 implements MigrationInterface
             type: 'uuid',
           },
           {
+            name: 'name',
+            type: 'varchar',
+          },
+          {
             name: 'description',
             type: 'varchar',
           },
