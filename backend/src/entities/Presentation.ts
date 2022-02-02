@@ -11,6 +11,12 @@ class Presentation {
   localization: string;
 
   @Column()
+  name: string;
+
+  @Column()
+  description: string;
+
+  @Column()
   date: Date;
 
   @Column()
