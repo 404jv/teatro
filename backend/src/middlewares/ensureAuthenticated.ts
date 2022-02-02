@@ -23,7 +23,7 @@ export function ensureAuthenticated(
   const [, token] = bearerToken.split(' ');
 
   try {
-    const { sub } = verify(token, 'cbd18b3884c75b1fb5bb00ea2a9fa2ba') as IPayLoad;
+    const { sub } = verify(token, 'vqBw8kn-zMZ99u') as IPayLoad;
 
     request.user_id = sub;
 
