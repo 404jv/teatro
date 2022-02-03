@@ -17,7 +17,7 @@ class Report {
   description: string;
 
   @Column()
-  date: string;
+  date: Date;
 
   constructor() {
     if (!this.id) {
