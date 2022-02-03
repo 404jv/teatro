@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinTable, ManyToMany, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from 'uuid';
+import { Participant } from "./Participant";
 
 @Entity('presentations')
 class Presentation {
@@ -24,6 +25,14 @@ class Presentation {
 
   @Column()
   total_audience: string;
+
+  @ManyToMany(() => Participant)
+  @JoinTable({
+    name: 'participant_presentation',
+    joinColumns: [{ name: 'presentation_id' }],
+    inverseJoinColumns: [{ name: 'participant_id' }]
+  })
+  participants: Participant[];
 
   constructor() {
     if (!this.id) {
