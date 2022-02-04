@@ -8,7 +8,7 @@ class Report {
   id: string;
 
   @Column()
-  user_id: string;
+  participant_id: string;
 
   @Column()
   presentation_id: string;
