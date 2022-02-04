@@ -39,7 +39,7 @@ export class CreateTableReports1643930340597 implements MigrationInterface {
           },
           {
             name: 'FKPresentationReport',
-            referencedTableName: 'reports',
+            referencedTableName: 'presentations',
             referencedColumnNames: ['id'],
             columnNames: ['presentation_id'],
             onDelete: 'SET NULL'
