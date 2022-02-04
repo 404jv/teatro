@@ -7,7 +7,7 @@ class ListPresentationsService {
     const presentationsRepository = getCustomRepository(PresentationsRepository);
 
     const presentations = await presentationsRepository.find({
-      relations: ['participants'],
+      relations: ['participants', 'reports'],
     });
 
     return presentations;
