@@ -1,6 +1,7 @@
-import { Column, Entity, JoinTable, ManyToMany, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from 'uuid';
 import { Participant } from "./Participant";
+import { Report } from "./Report";
 
 @Entity('presentations')
 class Presentation {
@@ -33,6 +34,9 @@ class Presentation {
     inverseJoinColumns: [{ name: 'participant_id' }]
   })
   participants: Participant[];
+
+  @OneToMany(() => Report, (report) => report.presentation_id)
+  reports: Report[];
 
   constructor() {
     if (!this.id) {
