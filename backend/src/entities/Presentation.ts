@@ -1,4 +1,4 @@
-import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, OneToMany, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from 'uuid';
 import { Participant } from "./Participant";
 import { Report } from "./Report";
@@ -35,7 +35,7 @@ class Presentation {
   })
   participants: Participant[];
 
-  @OneToMany(() => Report, (report) => report.presentation_id)
+  @OneToMany(() => Report, (report) => report.presentation)
   reports: Report[];
 
   constructor() {
