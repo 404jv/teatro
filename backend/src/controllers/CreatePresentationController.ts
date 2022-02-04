@@ -10,7 +10,8 @@ class CreatePresentationController {
       hour,
       totalAudience,
       description,
-      participantsIds
+      participantsIds,
+      reports,
     } = request.body;
 
     const createPresentationService = new CreatePresentationService();
@@ -22,7 +23,8 @@ class CreatePresentationController {
       hour,
       totalAudience,
       description,
-      participantsIds
+      participantsIds,
+      reports,
     });
 
 
