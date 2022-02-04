@@ -13,7 +13,7 @@ export class CreateTableReports1643930340597 implements MigrationInterface {
             isPrimary: true,
           },
           {
-            name: 'user_id',
+            name: 'participant_id',
             type: 'uuid',
           },
           {
@@ -31,10 +31,10 @@ export class CreateTableReports1643930340597 implements MigrationInterface {
         ],
         foreignKeys: [
           {
-            name: 'FKUserReport',
-            referencedTableName: 'users',
+            name: 'FKParticipantReport',
+            referencedTableName: 'participants',
             referencedColumnNames: ['id'],
-            columnNames: ['user_id'],
+            columnNames: ['participant_id'],
             onDelete: 'SET NULL'
           },
           {
