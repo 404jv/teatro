@@ -20,8 +20,10 @@ routes.post('/auth', authenticateAdminController.handle);
 routes.get('/presentation', listPresentationsController.handle);
 
 routes.use(ensureAuthenticated, ensureAdmin);
+
 routes.post('/participant/create', createParticipantController.handle);
-routes.get('/participant', listParticipantsController.handle);
 routes.post('/presentation/create', createPresentationController.handle);
+
+routes.get('/participant', listParticipantsController.handle);
 
 export { routes };
