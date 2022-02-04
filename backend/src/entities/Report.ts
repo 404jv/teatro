@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from 'uuid';
+import { Presentation } from "./Presentation";
 
 @Entity('reports')
 class Report {
@@ -9,6 +10,10 @@ class Report {
 
   @Column()
   participant_id: string;
+
+  @JoinColumn({ name: 'presentation_id' })
+  @OneToOne(() => Presentation)
+  presentation: Presentation;
 
   @Column()
   presentation_id: string;
