@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { AuthenticateAdminController } from './controllers/AuthenticateAdminController';
+import { CreateAdminController } from './controllers/CreateAdminController';
 import { CreateParticipantController } from './controllers/CreateParticipantController';
 import { CreatePresentationController } from './controllers/CreatePresentationController';
 import { ListParticipantsController } from './controllers/ListParticipantsController';
@@ -12,6 +13,7 @@ const createParticipantController = new CreateParticipantController();
 const listParticipantsController = new ListParticipantsController();
 const createPresentationController = new CreatePresentationController();
 const listPresentationsController = new ListPresentationsController();
+const createAdminController = new CreateAdminController();
 
 const routes = Router();
 
@@ -25,5 +27,7 @@ routes.post('/participant/create', createParticipantController.handle);
 routes.post('/presentation/create', createPresentationController.handle);
 
 routes.get('/participant', listParticipantsController.handle);
+
+routes.post('/admin/create', createAdminController.handle);
 
 export { routes };
