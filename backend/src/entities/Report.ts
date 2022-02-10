@@ -19,6 +19,9 @@ class Report {
   description: string;
 
   @Column()
+  user_name: string;
+
+  @Column()
   date: Date;
 
   constructor() {

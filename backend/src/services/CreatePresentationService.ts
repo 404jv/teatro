@@ -6,6 +6,7 @@ import { ReportsRepository } from "../repositories/ReportsRepository";
 
 interface IReport {
   description: string;
+  user_name: string;
   date: Date;
 }
 
@@ -47,12 +48,13 @@ class CreatePresentationService {
     const participants = await participantsRepository.findByIds(participantsIds);
 
     reports.map(async (report) => {
-      const { date, description } = report;
+      const { date, description, user_name } = report;
 
       const createdReport = reportsRepository.create({
         date,
         description,
         presentation_id: presentation.id,
+        user_name,
       });
 
       await reportsRepository.save(createdReport);
