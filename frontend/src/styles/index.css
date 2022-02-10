@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 70px;
+}
+
+.about h2 {
+  font-family: 'Red Hat Text', sans-serif;
+  margin-bottom: 10px;
+  color: #071E22;
+}
+
+.about p {
+  font-family: 'Red Hat Text', sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.members {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 70px;
+}
+
+.members h2{
+  font-family: 'Red Hat Text', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #071E22;
+}
+
+.members p{
+  font-family: 'Red Hat Text', sans-serif;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.gallery img {
+  width: 350px;
+  margin: 4px;
+  object-fit: cover;
+}

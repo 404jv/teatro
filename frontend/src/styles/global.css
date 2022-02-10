@@ -1,0 +1,119 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  margin-bottom: 64px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #071E22;
+}
+
+.menu-options {
+  margin-right: 30px;
+}
+
+.logo {
+  margin-left: 30px;
+  margin-bottom: 8px;
+  width: 120px;
+}
+
+header a {
+  font-size: 20px;
+  margin: 12px 16px;
+  font-family: Roboto, sans-serif;
+  color: #FFF;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #C7E2DD;
+}
+
+
+.selected {
+  color: #071E22;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.section {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionText {
+  font-size: 22px;
+  margin-bottom: 4px;
+  font-family: 'Rhodium Libre', serif;
+  color: #071E22;
+}
+
+.division {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.division .line {
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 25vw;
+  border-bottom: 0.5px solid black;
+}
+
+.division .circle {
+  width: 25px;
+  height: 25px;
+  background-color: #071E22;
+  border-radius: 50%;
+}
+
+footer{
+  margin-top: 50px;
+  display: flex;
+  background-color: #071E22;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.instagram{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.instagram p{
+  color: #FFF;
+  font-family: 'Red Hat Text', sans-serif;
+  margin-left: 5px;
+}
+
+.instagram-icon{
+  font-size: 30px;
+  color: #FFF;
+}

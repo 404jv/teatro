@@ -1,0 +1,13 @@
+
+
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hours{
+    display: flex;
+    
+}
