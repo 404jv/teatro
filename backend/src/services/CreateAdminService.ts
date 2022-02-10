@@ -1,6 +1,7 @@
 import { getCustomRepository } from "typeorm";
 import { Admin } from "../entities/Admin";
 import { AdminsRepository } from "../repositories/AdminsRepository";
+import { hash } from 'bcrypt';
 
 interface IRequest {
   name: string;
@@ -14,11 +15,13 @@ class CreateAdminService {
   async execute({ address, email, name, password, phone }: IRequest): Promise<Admin> {
     const adminsRepository = getCustomRepository(AdminsRepository);
 
+    const passwordHash = await hash(password, 8);
+
     const userAdmin = adminsRepository.create({
       address,
       email,
       name,
-      password,
+      password: passwordHash,
       phone,
     });
 
