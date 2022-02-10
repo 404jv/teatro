@@ -8,9 +8,6 @@ class Report {
   @PrimaryColumn()
   id: string;
 
-  @Column()
-  participant_id: string;
-
   @JoinColumn({ name: 'presentation_id' })
   @OneToOne(() => Presentation)
   presentation: Presentation;

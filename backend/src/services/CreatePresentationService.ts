@@ -6,7 +6,6 @@ import { ReportsRepository } from "../repositories/ReportsRepository";
 
 interface IReport {
   description: string;
-  participant_id: string;
   date: Date;
 }
 
@@ -48,12 +47,11 @@ class CreatePresentationService {
     const participants = await participantsRepository.findByIds(participantsIds);
 
     reports.map(async (report) => {
-      const { date, description, participant_id } = report;
+      const { date, description } = report;
 
       const createdReport = reportsRepository.create({
         date,
         description,
-        participant_id,
         presentation_id: presentation.id,
       });
 
