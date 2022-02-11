@@ -1,0 +1,31 @@
+
+
+
+.locationContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.location{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.location img{
+    width: 426px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.location h3{
+    font-family: 'Red Hat Text', sans-serif;
+    margin-top: 5px;
+}

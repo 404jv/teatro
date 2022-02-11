@@ -1,13 +1,88 @@
 
+.presentation{
+    margin-bottom: 50px;
+}
 
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 150px;
+}
 
-.date{
+.date-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hours{
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+}
+
+.time{
+    font-family: 'Rhodium Libre', serif;
+    color: #071E22;
+}
+
+.date{
+    font-family: 'Rhodium Libre', serif;
+    color: #071E22;
+}
+
+.localization{
+    font-family: 'Red Hat Text', sans-serif;
+    color: #071E22;
+}
+
+.description{
+    font-family: 'Red Hat Text', sans-serif;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.specifications{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+
+    justify-content: space-between;
+}
+
+.participants{
+    display: flex;
+    flex-direction: column;
+}
+
+.participants h2{
+    font-family: 'Rhodium Libre', serif;
+    color: #071E22;
+}
+
+.participants p{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.reports{
+    display: flex;
+    flex-direction: column;
+}
+
+.reports h2{
+    font-family: 'Rhodium Libre', serif;
+    color: #071E22;
+}
+
+.reports p{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 3px;
 }
