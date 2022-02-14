@@ -1,0 +1,33 @@
+.systemHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #071E22;
+}
+
+.systemLogoHeader{
+    width: 120px;
+    margin-left: 15px;
+}
+
+.loggout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.loggout p{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 23px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.powerIcon{
+    font-size: 30px;
+    color: #fff;
+}
