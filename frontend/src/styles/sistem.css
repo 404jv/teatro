@@ -1,13 +1,13 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #071E22;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,12 +18,12 @@ body{
     border-radius: 10px;
 }
 
-.sistemLogo{
+.sistemLogo {
     width: 150px;
     margin-bottom: 40px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@ form{
 }
 
 
-.sistemInput{
+.sistemInput {
     padding: 8px;
     background-color: #777B7B;
     border: none;
@@ -40,16 +40,16 @@ form{
     margin-top: 10px;
 }
 
-.sistemInput::placeholder{
+.sistemInput::placeholder {
     color: #fff;
 }
 
-.sistemInput:focus{
+.sistemInput:focus {
     outline: 0;
     border: 1px solid #071E22;
 }
 
-.sistemButton{
+.sistemButton {
     padding: 8px;
     width: 120px;
     margin-top: 15px;
@@ -60,12 +60,12 @@ form{
     cursor: pointer;
 }
 
-.backToHome{
+.backToHome {
     font-family: 'Red Hat Text', sans-serif;
     color: #071E22;
     margin-top: 5px;
 }
 
 .backToHome:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

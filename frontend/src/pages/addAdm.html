@@ -7,15 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/addAdm.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
-  <title>Dashboard</title>
+  <title>Adicionar Adm</title>
 </head>
 
 <body>
+
+
   <div class="systemHeader">
     <img src="../assets/logo.png" class="systemLogoHeader" alt="Logo">
 
@@ -25,15 +28,26 @@
     </button>
   </div>
 
+
   <div class="container">
     <div class="content">
-      <p>Sistema da administração</p>
+      <p class="title-form">Cadastrar Adm</p>
 
-      <a class="link" href="./addAdm.html">Cadastrar Adm</a>
+      <form action="">
 
-      <a class="link" href="./addParticipant.html">Cadastrar Participante</a>
+        <input placeholder="Nome" type="text" name="nome" id="nome">
+        <input placeholder="E-mail" type="email" name="email" id="email">
+        <input placeholder="Telefone" type="tel" name="Telefone" id="Telefone">
+        <input placeholder="Senha" type="password" name="password" id="password">
+        <input placeholder="Endereço" type="text" name="Endereço" id="Endereço">
 
-      <a class="link" href="./addApresentation.html">Cadastrar Apresentação</a>
+
+        <button type="button">
+          Adicionar
+        </button>
+
+        <a href="./systemDashboard.html">Voltar para o controle do sistema</a>
+      </form>
     </div>
   </div>
 

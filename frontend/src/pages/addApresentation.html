@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/addAdm.css">
+  <link rel="stylesheet" href="../styles/addApresentation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+  <title>Adicionar Apresentação</title>
+</head>
+
+<body>
+  <div class="systemHeader">
+    <img src="../assets/logo.png" class="systemLogoHeader" alt="Logo">
+
+    <button class="loggout">
+      <ion-icon name="power-outline" class="powerIcon"></ion-icon>
+      <p>Sair</p>
+    </button>
+  </div>
+
+
+  <div class="container">
+    <div class="content">
+      <p class="title-form">Adicionar Apresentação</p>
+
+      <form action="">
+
+        <input placeholder="Nome da apresentação" type="text" name="name" id="nome">
+        <input placeholder="Localização" type="text" name="localizacao" id="Localizacao">
+        <input placeholder="Total de audiência" type="number" name="audiencia" id="audiencia">
+        <input placeholder="Data" type="date" name="date" id="date">
+        <input placeholder="Horário" type="text" name="horario" id="horario">
+
+        <p class="description-title">Descrição da Apresentação</p>
+        <textarea class="textareaDescription" name="description" id="description" cols="30" rows="5"></textarea>
+
+        <select class="selectParticipants" name="participants" id="participants">
+          <option value="select-title" selected disabled>Participantes</option>
+          <option value="volvo">João</option>
+          <option value="volvo">João</option>
+          <option value="volvo">João</option>
+        </select>
+
+        <div class="participant-wrapper">
+            <button class="participant-added">João</button>
+            <button class="participant-added">João</button>
+            <button class="participant-added">João</button>
+            <button class="participant-added">João</button>
+            <button class="participant-added">João</button>
+            <button class="participant-added">João</button>
+        </div>
+
+        <button class="addReportButton">Adicionar relato</button>
+
+        <div class="reports-wrapper">
+            <div class="report">
+                <input class="reportText" placeholder="Nome" type="text" name="reportName" id="reportName">
+                <textarea name="reportDescription" id="reportDescription" cols="15" rows="4"></textarea>
+            </div>
+
+            <div class="report">
+                <input class="reportText" placeholder="Nome" type="text" name="reportName" id="reportName">
+                <textarea name="reportDescription" id="reportDescription" cols="15" rows="4"></textarea>
+            </div>
+
+        </div>
+
+
+        <button type="button">
+          Adicionar Apresentação
+        </button>
+
+
+        <a href="./systemDashboard.html">Voltar para o controle do sistema</a>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

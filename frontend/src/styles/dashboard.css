@@ -1,4 +1,9 @@
-.systemHeader{
+body {
+    background-color: #071E22;
+}
+
+
+.systemHeader {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -8,26 +13,65 @@
     background-color: #071E22;
 }
 
-.systemLogoHeader{
+.systemLogoHeader {
     width: 120px;
     margin-left: 15px;
 }
 
-.loggout{
+.loggout {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 64px;
+    background-color: transparent;
+    border: none;
 }
 
-.loggout p{
+.loggout:hover {
+    cursor: pointer;
+}
+
+.loggout p {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 23px;
     color: #fff;
     margin-left: 5px;
 }
 
-.powerIcon{
+.powerIcon {
     font-size: 30px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    min-height: 500px;
+    border-radius: 10px;
+}
+
+.content .link {
+    display: flex;
+    min-width: 190px;
+    height: 50px;
+    background-color: #777B7B;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }

@@ -1,0 +1,89 @@
+input[type="date"] {
+    width: 185px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.8);
+}
+
+.description-title {
+    color: #071E22;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+}
+
+.textareaDescription {
+    border: 0;
+    background-color: #C4C4C4;
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    min-width: 280px;
+    min-height: 80px;
+    max-width: 290px;
+    max-height: 100px;
+}
+
+.textareaDescription:focus {
+    outline: none;
+}
+
+.selectParticipants {
+    margin-top: 20px;
+    padding: 10px;
+    width: 190px;
+    background-color: #777B7B;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+}
+
+.selectParticipants:focus {
+    outline: none;
+}
+
+.participant-added {
+    background-color: #C4C4C4;
+    color: black;
+    margin-left: 5px;
+}
+
+
+.participant-wrapper {
+    display: flex;
+    padding: 0 10px 10px 5px;
+    width: 600px;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.addReportButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 190px;
+    background-color: #777B7B;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+}
+
+.reports-wrapper {
+    display: flex;
+    padding: 0 10px;
+    width: 600px;
+    overflow-x: auto;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.report {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.reportText {
+    background-color: #C4C4C4;
+    color: #000;
+}

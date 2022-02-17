@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/addApresentation.css">
+  <link rel="stylesheet" href="../styles/addAdm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+  <title>Adicionar Participante</title>
+</head>
+
+<body>
+  <div class="systemHeader">
+    <img src="../assets/logo.png" class="systemLogoHeader" alt="Logo">
+
+    <button class="loggout">
+      <ion-icon name="power-outline" class="powerIcon"></ion-icon>
+      <p>Sair</p>
+    </button>
+  </div>
+
+
+  <div class="container">
+    <div class="content">
+      <p class="title-form">Cadastrar Participante</p>
+
+      <form action="">
+
+        <input placeholder="Nome" type="text" name="name" id="nome">
+        <input placeholder="Cidade" type="text" name="city" id="Cidade">
+        <input placeholder="Telefone" type="tel" name="phone" id="tel">
+        <input placeholder="Endereço" type="text" name="address" id="Endereço">
+
+        <select class="selectParticipants" name="schoolGrade" id="schoolGrade">
+          <option value="volvo" selected disabled>Adicionar Participante</option>
+          <option value="volvo">1º Ano - Técnico em Informática</option>
+          <option value="volvo">1º Ano - Técnico em Produção de Moda</option>
+          <option value="volvo">2º Ano - Técnico em Informática</option>
+          <option value="volvo">2º Ano - Técnico em Produção de Moda</option>
+          <option value="volvo">3º Ano - Técnico em Informática</option>
+          <option value="volvo">3º Ano - Técnico em Produção de Moda</option>
+          <option value="volvo">4º Ano - Técnico em Informática</option>
+          <option value="volvo">4º Ano - Técnico em Produção de Moda</option>
+        </select>
+
+        <button type="button">
+          Adicionar
+        </button>
+
+        <a href="./systemDashboard.html">Voltar para o controle do sistema</a>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
