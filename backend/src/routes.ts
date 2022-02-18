@@ -21,12 +21,12 @@ routes.post('/auth', authenticateAdminController.handle);
 
 routes.get('/presentation', listPresentationsController.handle);
 
+routes.get('/participant', listParticipantsController.handle);
+
 routes.use(ensureAuthenticated, ensureAdmin);
 
 routes.post('/participant/create', createParticipantController.handle);
 routes.post('/presentation/create', createPresentationController.handle);
-
-routes.get('/participant', listParticipantsController.handle);
 
 routes.post('/admin/create', createAdminController.handle);
 
