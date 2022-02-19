@@ -1,12 +1,12 @@
 
 .presentation{
     margin-bottom: 50px;
+    margin: 64px 150px;
 }
 
 .details{
     display: flex;
     flex-direction: column;
-    margin: 30px 150px;
 }
 
 .date-container{
@@ -41,6 +41,7 @@
     font-family: 'Red Hat Text', sans-serif;
     text-align: justify;
     margin-top: 10px;
+    margin-bottom: 16px;
     line-height: 25px;
     font-size: 18px;
 }
@@ -56,11 +57,7 @@
 .participants{
     display: flex;
     flex-direction: column;
-}
-
-.participants h2{
-    font-family: 'Rhodium Libre', serif;
-    color: #071E22;
+    margin-bottom: 16px;
 }
 
 .participants p{
@@ -75,7 +72,7 @@
     flex-direction: column;
 }
 
-.reports h2{
+h2{
     font-family: 'Rhodium Libre', serif;
     color: #071E22;
 }
