@@ -43,42 +43,27 @@
         <p class="description-title">Descrição da Apresentação</p>
         <textarea class="textareaDescription" name="description" id="description" cols="30" rows="5"></textarea>
 
-        <select class="selectParticipants" name="participants" id="participants">
-          <option value="select-title" selected disabled>Participantes</option>
-          <option value="volvo">João</option>
-          <option value="volvo">João</option>
-          <option value="volvo">João</option>
-        </select>
+        <div>
+          <select class="selectParticipants" name="participants" id="participants">
+            <option value="" selected disabled>Escolha o aluno</option>
+          </select>
 
-        <div class="participant-wrapper">
-            <button class="participant-added">João</button>
-            <button class="participant-added">João</button>
-            <button class="participant-added">João</button>
-            <button class="participant-added">João</button>
-            <button class="participant-added">João</button>
-            <button class="participant-added">João</button>
+          <button onclick="addUserHandle()" class="addReportButton" type="button">Adicionar participante</button>
         </div>
 
-        <button class="addReportButton">Adicionar relato</button>
+
+        <div class="participant-wrapper">
+        </div>
+
+        <button onclick="addReportHandle()" type="button" class="addReportButton">Adicionar relato</button>
 
         <div class="reports-wrapper">
-            <div class="report">
-                <input class="reportText" placeholder="Nome" type="text" name="reportName" id="reportName">
-                <textarea name="reportDescription" id="reportDescription" cols="15" rows="4"></textarea>
-            </div>
-
-            <div class="report">
-                <input class="reportText" placeholder="Nome" type="text" name="reportName" id="reportName">
-                <textarea name="reportDescription" id="reportDescription" cols="15" rows="4"></textarea>
-            </div>
-
         </div>
 
 
         <button type="button">
           Adicionar Apresentação
         </button>
-
 
         <a href="./systemDashboard.html">Voltar para o controle do sistema</a>
       </form>
@@ -88,7 +73,7 @@
 
 
 
-
+  <script src="../js/addApresentation.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
